@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../style/style.css">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encode - Decode</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <a  href="#"  onclick="xor()"class="a">XOR</a>
+            <a href="#" onclick="caesar()" class="a">Caesar</a>
+            <a href="#" onclick="edbase64()" class="a">Base64</a>
+        </div>
+    </div>
+    <div class="main">
+         <div class="radio-group">
+            <input type="radio" id="encode" name="action" value="encode" checked>
+            <label for="encode">Encode</label>
+
+            <input type="radio" id="decode" name="action" value="decode">
+            <label for="decode">Decode</label>
+    </div>
+        <h1 id="choose" class="type">Choose above</h1>
+        <textarea class="fixed" placeholder="Enter..."></textarea>
+        <textarea hidden id="integer" class="integer" placeholder="Enter integer..."></textarea>
+        <button class="submit" id="a1"  type="button">Submit</button>
+        <h3 id="output"></h3>
+        
+    </div>
+    <script src="../script/script.js"></script>
+</body>
+</html>
